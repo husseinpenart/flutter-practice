@@ -6,24 +6,22 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        appBarTheme: AppBarTheme(backgroundColor: Colors.deepPurple),
+        appBarTheme: const AppBarTheme(backgroundColor: Colors.amber),
       ),
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // backgroundColor: Colors.blueAccent,
-        appBar: AppBar(title: Text("Flutter basics")),
+        appBar: AppBar(title: const Text("Flutter Basics")),
         body: NewWidget(),
         floatingActionButton: FloatingActionButton(
-          onPressed: () => debugPrint("clicked on floating action button"),
+          onPressed: () => debugPrint('clicked'),
           child: const Icon(Icons.ac_unit),
         ),
       ),
     );
   }
 }
-
