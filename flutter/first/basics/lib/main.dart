@@ -1,4 +1,6 @@
+import 'package:basics/widget/Images.assets.dart';
 import 'package:basics/widget/body.widget.dart';
+import 'package:basics/widget/row.col.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -6,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,10 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: const Text("Flutter Basics")),
-        body: NewWidget(),
+        // body: NewWidget(),
+        // body: rowcol(),
+        // body: Images(),
+
         floatingActionButton: FloatingActionButton(
           onPressed: () => debugPrint('clicked'),
           child: const Icon(Icons.ac_unit),
@@ -25,3 +30,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
