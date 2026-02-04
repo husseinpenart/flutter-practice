@@ -1,3 +1,6 @@
+import 'dart:math';
+
+import 'package:basics/widget/Buttons.dart';
 import 'package:basics/widget/Images.assets.dart';
 import 'package:basics/widget/body.widget.dart';
 import 'package:basics/widget/row.col.dart';
@@ -21,6 +24,8 @@ class MyApp extends StatelessWidget {
         // body: NewWidget(),
         // body: rowcol(),
         // body: Images(),
+        // body: ScrolView(),
+        body: Buttons(),
 
         floatingActionButton: FloatingActionButton(
           onPressed: () => debugPrint('clicked'),
@@ -30,4 +35,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
