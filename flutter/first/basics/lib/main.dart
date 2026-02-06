@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:basics/Theme.dart';
 import 'package:basics/root_bottom_navigation.dart';
 import 'package:basics/screens/screen_one.dart';
 import 'package:basics/screens/screen_two.dart';
@@ -23,9 +24,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        appBarTheme: const AppBarTheme(backgroundColor: Colors.amber),
-      ),
+      // theme: ThemeData(
+      //   appBarTheme: const AppBarTheme(backgroundColor: Colors.amber),
+      // ),
+      themeMode: ThemeMode.system,
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
       // home: CounterScreen(),
       // home: ListScreen(),
       home: RootBottomNavigation(),
